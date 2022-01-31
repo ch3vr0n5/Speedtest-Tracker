@@ -4,7 +4,7 @@ LABEL maintainer=brandontylergibbs@gmail.com
 ENV arch='x86_64'
 
 COPY ./docker/conf/ /
-COPY . /site
+COPY ./ /site
 
 EXPOSE 80 443
 

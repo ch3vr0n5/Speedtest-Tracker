@@ -103,7 +103,7 @@ export default class HistoryGraph extends Component {
                     fill: false,
                     yAxisID: 'y-axis-2',
                 }
-            ],
+            ]
         };
         var duOptions = {
             maintainAspectRatio: false,
@@ -118,13 +118,15 @@ export default class HistoryGraph extends Component {
                 text: 'Speedtests results for the last ' + days + ' days',
             },
             scales: {
-                xAxes: [{
+                xAxes: [
+                    {
                     display: false,
                     scaleLabel: {
                         display: true,
                         labelString: 'DateTime'
+                        }
                     }
-                }],
+                ],
                 yAxes: [
                     {
                       type: 'linear',
@@ -139,9 +141,9 @@ export default class HistoryGraph extends Component {
                       id: 'y-axis-2',
                       gridLines: {
                         drawOnArea: false,
-                      },
-                    },
-                  ],
+                      }
+                    }
+                  ]
             },
             elements: {
                 point:{

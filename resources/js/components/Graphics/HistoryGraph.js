@@ -88,23 +88,22 @@ export default class HistoryGraph extends Component {
 
         var duData = {
             labels: [],
-            datasets:[
-                {
-                    data: [],
-                    label: 'Download',
-                    borderColor: "#fca503",
-                    fill: false,
-                    yAxisID: 'y-axis-1',
-                },
-                {
-                    data: [],
-                    label: 'Upload',
-                    borderColor: "#3e95cd",
-                    fill: false,
-                    yAxisID: 'y-axis-2',
-                }
-            ]
-        };
+datasets:[
+	{
+		data: [],
+		label: 'Download',
+		borderColor: "#fca503",
+		fill: false,
+		yAxisID: 'y-axis-1',
+	},
+	{
+		data: [],
+		label: 'Upload',
+		borderColor: "#3e95cd",
+		fill: false,
+		yAxisID: 'y-axis-2',
+	}
+],        };
         var duOptions = {
             maintainAspectRatio: false,
             responsive: true,
@@ -127,24 +126,24 @@ export default class HistoryGraph extends Component {
                         }
                     }
                 ],
-                yAxes: [
-                    {
-                      type: 'linear',
-                      display: true,
-                      position: 'left',
-                      id: 'y-axis-1',
-                    },
-                    {
-                      type: 'linear',
-                      display: true,
-                      position: 'right',
-                      id: 'y-axis-2',
-                      gridLines: {
-                        drawOnArea: false,
-                      }
-                    }
-                  ]
-            },
+yAxes: [
+  {
+	type: 'linear',
+	display: true,
+	position: 'left',
+	id: 'y-axis-1',
+  },
+  {
+	type: 'linear',
+	display: true,
+	position: 'right',
+	id: 'y-axis-2',
+	gridLines: {
+	  drawOnArea: false,
+	},
+  },
+]            
+},
             elements: {
                 point:{
                     radius: 0,

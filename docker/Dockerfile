@@ -1,5 +1,5 @@
 FROM linuxserver/nginx
-LABEL maintainer=henrywhitaker3@outlook.com
+LABEL maintainer=brandontylergibbs@gmail.com
 
 ENV arch='x86_64'
 
